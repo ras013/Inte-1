@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cálculo Integral Interactivo</title>
+  <link rel="stylesheet" href="vendor/katex/katex.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>∫</text></svg>">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div class="brand">
+        <div class="brand-logo">∫</div>
+        <div>
+          <div class="brand-title">Cálculo Integral</div>
+          <div class="brand-sub">Curso interactivo</div>
+        </div>
+      </div>
+      <nav id="nav"></nav>
+      <div class="sidebar-footer">
+        <button class="btn btn-ghost" id="btn-reset-progress" title="Borra tu progreso guardado">↺ Reiniciar progreso</button>
+      </div>
+    </aside>
+    <main id="main">
+      <header id="topbar">
+        <button class="btn btn-ghost menu-btn" id="menu-btn" aria-label="Menú">☰</button>
+        <div id="topbar-title"></div>
+        <div id="topbar-progress"></div>
+      </header>
+      <div id="content"></div>
+    </main>
+  </div>
+
+  <script src="vendor/katex/katex.min.js"></script>
+  <script src="vendor/plotly.min.js"></script>
+  <script src="js/content.js"></script>
+  <script src="js/math.js"></script>
+  <script src="js/helpers.js"></script>
+  <script src="js/tools/riemann.js"></script>
+  <script src="js/tools/tfc.js"></script>
+  <script src="js/tools/inmediatas.js"></script>
+  <script src="js/tools/sustitucion.js"></script>
+  <script src="js/tools/partes.js"></script>
+  <script src="js/tools/trigonometria.js"></script>
+  <script src="js/tools/trigsub.js"></script>
+  <script src="js/tools/fracciones.js"></script>
+  <script src="js/tools/weierstrass.js"></script>
+  <script src="js/tools/impropias.js"></script>
+  <script src="js/tools/solidos.js"></script>
+  <script src="js/tools/estrategia.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
